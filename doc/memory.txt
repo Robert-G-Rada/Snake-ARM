@@ -1,0 +1,3 @@
+r11 - snake size
+r10 - new_direction
+r9  - direction
