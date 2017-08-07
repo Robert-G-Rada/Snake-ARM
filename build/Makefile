@@ -8,5 +8,5 @@ $(PROJ).bin: $(PROJ).elf
 $(PROJ).elf: $(PROJ).s
 	arm-none-eabi-as.exe $(PROJ).s -o $(PROJ).elf
 $(PROJ).s: ../source/*.s
-	arm-agb-elf-cpp.exe ../source/main.s | grep "^[^#;]" > $(PROJ).s
+	arm-none-eabi-cpp.exe ../source/main.s | grep "^[^#;]" > $(PROJ).s
     

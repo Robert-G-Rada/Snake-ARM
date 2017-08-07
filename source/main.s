@@ -1,9 +1,13 @@
     .align 2
     .global main
 main:
-    b   FUNC_START
-FUNC_END:
-    b   FUNC_END
+    ldr     r13, .STACK_START
+    b       start
+.STACK_START:
+    .word   0x0203FFF0
+end:
+    b       end
     
 #include "util.h"
 #include "game.s"
+#include "draw.s"
