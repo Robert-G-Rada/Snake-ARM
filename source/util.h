@@ -24,6 +24,7 @@
 #define WINDOW_POS      MEM_VRAM + WINDOW_X * 2 + WINDOW_Y * SCREEN_WIDTH * 2
 
 #define SNAKE_HEAD      0x02000000
+#define MAX_COUNT       15
 
 #define DIR_UP          1
 #define DIR_RIGHT       2  
